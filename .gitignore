@@ -1,0 +1,20 @@
+# Python environments
+.venv/
+.venv-md/
+__pycache__/
+*.pyc
+
+# CULane data (non-commercial license, not redistributed)
+05081544_0305/
+video_example.zip
+
+# Model weights (>100 MB; see scripts/download_models.sh)
+models/
+
+# Generated: calibration cache, auto-labeled dataset, scratch outputs
+cache/
+data/
+hud.png
+*.log
+
+.DS_Store

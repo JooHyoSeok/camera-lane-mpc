@@ -1,0 +1,20 @@
+# MetaDrive pipeline: md_play.py, md_drive.py, md_autolabel.py, train_ufld.py, md_eval_perception.py
+# python3 -m venv .venv-md && .venv-md/bin/pip install -r requirements-metadrive.txt
+#
+# metadrive-simulator depends on opencv-python, whose macOS wheel bundles SDL2 and
+# clashes with pygame's. Install it first, then swap in the headless OpenCV 4.10
+# (no SDL):
+#   .venv-md/bin/pip install metadrive-simulator==0.4.3
+#   .venv-md/bin/pip uninstall -y opencv-python
+#   .venv-md/bin/pip install -r requirements-metadrive.txt
+metadrive-simulator==0.4.3
+opencv-python-headless==4.10.0.84
+numpy==2.0.2
+onnxruntime==1.19.2
+osqp==1.1.3
+scipy==1.13.1
+pillow==11.3.0
+pygame==2.6.1
+torch==2.8.0
+onnx==1.19.1
+onnx2torch==1.5.15
